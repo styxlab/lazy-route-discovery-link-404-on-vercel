@@ -1,15 +1,8 @@
-import { useEffect } from "react";
+import { AnbieterDurchschnittspreise, BedarfsausweisPreise, VerbrauchsausweisPreise } from '~/components/ChartsForCostComparisons'
 
 export const config = { runtime: 'node' }
 
 export default function Article() {
-    useEffect(() => {
-      setTimeout(() => {
-        console.log('Article page loaded after 2 seconds');
-      }, 6000);
-    }, []);
-
-
     return (
       <div className="flex h-screen items-center justify-center">
         <div className="flex flex-col items-center gap-16">
@@ -17,6 +10,9 @@ export default function Article() {
             <h1 className="leading text-2xl font-bold text-gray-800 dark:text-gray-100">
               Are we getting here?
             </h1>
+            <AnbieterDurchschnittspreise />
+            <BedarfsausweisPreise />
+            <VerbrauchsausweisPreise />
           </header>         
         </div>
       </div>
