@@ -40,10 +40,22 @@ export default function Index() {
             Navigate to About page and observe 404 error!
           </Link>
           <Link to="/edge">
-            Navigate to About page - working with edge runtime?
-          </Link>          
-          <a href="/simple">
-            Navigate to Simple page and verify it iw working fine!
+            Navigate to page - working with edge runtime?
+          </Link>
+          <Link to="/complex">
+            Navigate to Page with Layout page
+          </Link>    
+          <p className="leading-6 text-gray-700 dark:text-gray-200">
+            Simple linking below
+          </p>         
+          <a href="/about">
+            Navigate to /about page with <code>{`<a>`}</code> tag
+          </a>
+          <a href="/edge">
+            Navigate to /edge page with <code>{`<a>`}</code> tag
+          </a>
+          <a href="/complex">
+            Navigate to /complex page with <code>{`<a>`}</code> tag
           </a>
         </nav>
       </div>
