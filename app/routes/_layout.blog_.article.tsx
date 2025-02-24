@@ -1,6 +1,12 @@
+import { LoaderFunctionArgs } from '@vercel/remix';
 import { AnbieterDurchschnittspreise, BedarfsausweisPreise, VerbrauchsausweisPreise } from '~/components/ChartsForCostComparisons'
+import { geoAccessCheck } from '~/utils/geo';
 
 export const config = { runtime: 'node' }
+
+export const loader = async (args: LoaderFunctionArgs) => {
+  return geoAccessCheck(args)
+}
 
 export default function Article() {
     return (
