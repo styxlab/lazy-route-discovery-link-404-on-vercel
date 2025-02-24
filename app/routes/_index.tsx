@@ -42,26 +42,11 @@ export default function Index() {
           <Link to="/edge">
             Navigate to page - working with edge runtime?
           </Link>
-          <Link to="/blog">
-            Navigate to Page with Layout page
-          </Link>
-          <Link to="/blog/article">
-            Navigate to Article
-          </Link>      
-          <p className="leading-6 text-gray-700 dark:text-gray-200">
-            Simple linking below
-          </p>         
           <a href="/about">
             Navigate to /about page with <code>{`<a>`}</code> tag
           </a>
           <a href="/edge">
             Navigate to /edge page with <code>{`<a>`}</code> tag
-          </a>
-          <a href="/blog">
-            Navigate to /blog page with <code>{`<a>`}</code> tag
-          </a>
-          <a href="/blog/article">
-            Navigate to /blog/article page with <code>{`<a>`}</code> tag
           </a>
         </nav>
       </div>
